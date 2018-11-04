@@ -37,7 +37,7 @@ class SparkConfigIntitaion {
    def toStartSparkSql(tname: String) = {
 
     val sqltable = spark.read.format("jdbc")
-      .option("url", "jdbc:sqlserver://150.150.150.20:1433;database=Analysis;user=sa;password=sql@123")
+      .option("url", "jdbc:sqlserver://localhost;database=Analysis;user="";password="")
       .option("driver", "com.microsoft.sqlserver.jdbc.SQLServerDriver")
       .option("dbtable",tname)
       .option("header",true)
