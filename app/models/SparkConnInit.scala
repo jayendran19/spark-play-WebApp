@@ -79,7 +79,7 @@ case class FastMoveProducts(Product_Code: String,Product_Description: String)
     val fastmoveproductsDS =tname.as(encoder)
     //import spark.implicits._
    // val fmpschema = StructType(Array(StructField("Product_Code",StringType),StructField("Product_Description",StringType)))
-    //val fastmoveproducts = "/user/rmkv/hive/FastMoveProducts/part-m-00000"
+    //val fastmoveproducts = "/user/hive/FastMoveProducts/part-m-00000"
     //val fastmoveproductsDS = spark.read.schema(fmpschema).option("delimiter", "\001").csv(fastmoveproducts).as[FastMoveProducts]
     fastmoveproductsDS
   }
